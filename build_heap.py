@@ -1,18 +1,15 @@
 # python3
-
-
 def build_heap(data):
     swaps = []
-        n = len(arr)
+    n = len(data)
 
     for i in range(n // 2, -1, -1):
-        min_heapify(i, arr, swaps)
-
+        min_heapify(i, data, swaps)
 
     return swaps
 
 
-    def min_heapify(i, arr, swaps):
+def min_heapify(i, arr, swaps):
     n = len(arr)
 
     left = 2 * i + 1
@@ -55,3 +52,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
